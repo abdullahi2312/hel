@@ -327,39 +327,121 @@ border-radius: 7px;
     margin-top: 20px;
 }
 
-@media (max-width: 480px) {
+
+@media (max-width: 900px) {
+    .uk { gap: 18px; }
+    .fc { width: 95px; }
+    .good { padding: 70px 24px 50px; }
+    .gk h1 { font-size: 28px; }
+    .image { width: 100%; max-width: 480px; }
+}
  
-    .gk h1 {
-        font-size: 24px;
+/* ============ MOBILE — 640px ============ */
+@media (max-width: 640px) {
+ 
+    /* Header */
+    .header {
+        justify-content: space-between;
+        padding: 0 20px;
+        height: 56px;
     }
-    .gk h6 {
-        font-size: 12px;
-    }
-    .jk {
+    .uk { display: none; }
+    .fc { display: none; }
+    .header i.fa-bars { display: block; }
+ 
+    /* Hero */
+    .good {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding: 76px 18px 40px;
+        gap: 28px;
+    }
+    .gk {
+        max-width: 100%;
+        min-width: unset;
+        width: 100%;
+    }
+    .gk h1 { font-size: 24px; }
+    .gk h6 { font-size: 11px; }
+    .gk p  { font-size: 14px; }
+ 
+    .jk {
+        flex-direction: row;
+        gap: 10px;
     }
     .gk button,
     .yh button {
+        padding: 0 16px;
+        height: 40px;
+        font-size: 13px;
+    }
+ 
+    /* Hero image card - full width */
+    .image {
+        width: 100%;
+        min-height: unset;
+        padding: 14px;
+        border-radius: 16px;
+    }
+    .image img {
+        height: 200px;
+    }
+    .df { font-size: 12px; }
+ 
+    /* Tools */
+    .fd { padding: 36px 16px 40px; }
+    .hk h1 { font-size: 21px; }
+    .hk p  { font-size: 14px; }
+ 
+    .hl {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+    .jkc {
+        max-width: 100%;
+        min-width: unset;
         width: 100%;
     }
-    .wess {
-        width: 45%;
-    }
-    .hk h1 {
-        font-size: 22px;
-    }
-    .jkc h1 {
-        font-size: 18px;
-    }
-    .lk {
-        width: 92%;
-    }
-    .ds h1 {
-        font-size: 20px;
-    }
-    .ds p br {
-        display: none;
-    }
-}
+    .jkc h1 { font-size: 16px; }
+    .jkc p  { font-size: 13px; }
  
+    /* Stats */
+    .wer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 16px;
+        padding: 40px 20px;
+    }
+    .wess h1 { font-size: 26px; }
+    .wess p  { font-size: 12px; }
+ 
+    /* CTA */
+    .lk {
+        width: calc(100% - 36px);
+        padding: 30px 18px;
+        border-radius: 18px;
+        margin-bottom: 40px;
+    }
+    .ds h1 { font-size: 20px; }
+    .ds p  { font-size: 14px; }
+ 
+    .vg {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .bt button,
+    .but button {
+        width: 210px;
+        padding: 0;
+    }
+ 
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        padding: 36px 18px;
+        gap: 28px;
+    }
+    .cont { width: 100%; }
+}
